@@ -23,7 +23,8 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app">
+      <h1>Request API with GraphQL</h1>
       <NewUserForm />
 
       <ul>

@@ -3,6 +3,8 @@ import { FormEvent, useState } from "react";
 import { GET_USER } from "../App";
 import { client } from "../lib/apollo";
 
+import "./styles.css";
+
 const CREATE_USER = gql`
   mutation ($name: String!) {
     createUser(name: $name) {
@@ -48,6 +50,7 @@ export function NewUserForm() {
       <input
         type="text"
         value={name}
+        placeholder="Write an name"
         onChange={(e) => setName(e.target.value)}
       />
 
